@@ -8,6 +8,7 @@ window.DIGITAL_CARD_CONFIG = {
     photo: "assets/hiroaki-masuda.png",
     theme: "midnight"
   },
+
   links: [
     {
       id: "linkedin",
@@ -15,6 +16,22 @@ window.DIGITAL_CARD_CONFIG = {
       shortLabel: "LinkedIn",
       url: "https://www.linkedin.com/in/hiroaki-masuda/",
       icon: "in",
+      enabled: true
+    },
+    {
+      id: "whatsapp",
+      label: "WhatsApp",
+      shortLabel: "WhatsApp",
+      url: "https://wa.me/6580791648",
+      icon: "WA",
+      enabled: true
+    },
+    {
+      id: "line",
+      label: "LINE",
+      shortLabel: "LINE",
+      url: "https://line.me/ti/p/i7arfjoMO8",
+      icon: "LINE",
       enabled: true
     },
     {
@@ -33,12 +50,42 @@ window.DIGITAL_CARD_CONFIG = {
       icon: "▦",
       enabled: true
     },
-    { id: "x", label: "X / Twitter", shortLabel: "X", url: "", icon: "X", enabled: false },
-    { id: "facebook", label: "Facebook", shortLabel: "Facebook", url: "", icon: "f", enabled: false },
-    { id: "instagram", label: "Instagram", shortLabel: "Instagram", url: "", icon: "◎", enabled: false },
-    { id: "tiktok", label: "TikTok", shortLabel: "TikTok", url: "", icon: "♪", enabled: false }
+    {
+      id: "x",
+      label: "X / Twitter",
+      shortLabel: "X",
+      url: "",
+      icon: "X",
+      enabled: false
+    },
+    {
+      id: "facebook",
+      label: "Facebook",
+      shortLabel: "Facebook",
+      url: "",
+      icon: "f",
+      enabled: false
+    },
+    {
+      id: "instagram",
+      label: "Instagram",
+      shortLabel: "Instagram",
+      url: "",
+      icon: "◎",
+      enabled: false
+    },
+    {
+      id: "tiktok",
+      label: "TikTok",
+      shortLabel: "TikTok",
+      url: "",
+      icon: "♪",
+      enabled: false
+    }
   ],
+
   defaultLink: "linkedin",
+
   contact: {
     email: "masuda@may-plan.com",
     phone: "+6580791648"
