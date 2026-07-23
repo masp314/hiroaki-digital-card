@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#07111f" />
+  <meta name="description" content="Hiroaki Masuda digital business card" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Digital Business Card</title>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="card" aria-label="Digital business card">
+      <header class="profile-header">
+        <img id="profilePhoto" class="profile-photo" src="assets/profile-placeholder.svg" alt="Profile photo" />
+        <div class="identity">
+          <p class="eyebrow">DIGITAL BUSINESS CARD</p>
+          <h1 id="profileName">Hiroaki Masuda</h1>
+          <p id="profileNameJa" class="name-ja">升田 裕章</p>
+          <p id="profileCompany" class="company">MAY Planning Pte. Ltd.</p>
+          <p id="profileTitle" class="title">Vice President & Chief Operating Officer</p>
+        </div>
+      </header>
+
+      <p id="profileTagline" class="tagline"></p>
+
+      <section class="qr-panel" aria-live="polite">
+        <div class="qr-label-row">
+          <div>
+            <span class="scan-label">SCAN TO CONNECT</span>
+            <h2 id="activeLabel">LinkedIn</h2>
+          </div>
+          <span id="activeIcon" class="active-icon">in</span>
+        </div>
+        <div class="qr-wrap">
+          <img id="qrImage" class="qr-image" alt="QR code" />
+        </div>
+        <p id="activeUrl" class="active-url"></p>
+        <a id="openLink" class="primary-button" href="#" target="_blank" rel="noopener">Open LinkedIn</a>
+      </section>
+
+      <nav aria-label="Select contact channel">
+        <p class="menu-label">Choose where to connect</p>
+        <div id="linkMenu" class="link-menu"></div>
+      </nav>
+
+      <div class="utility-row">
+        <button id="shareButton" class="utility-button" type="button">Share card</button>
+        <button id="copyButton" class="utility-button" type="button">Copy link</button>
+        <button id="saveContactButton" class="utility-button" type="button">Save contact</button>
+      </div>
+      <p id="statusMessage" class="status-message" aria-live="polite"></p>
+    </section>
+    <footer>One screen. One scan. No paper.</footer>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
